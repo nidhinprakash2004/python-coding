@@ -1,0 +1,13 @@
+n=int(input("total_no_of_monkeys"))
+k=int(input("eatable_bananas"))
+j=int(input("eatable_peanuts"))
+m=int(input("total_bananas"))
+p=int(input("total_peanuts"))
+if n<=0 or k<=0 or j<=0 or m<0 or p<0:
+ print("invalid input")
+else:
+ nb=m//k
+ np=p//j
+ nt=nb+np
+ monkeysleft=n-nt
+ print("no_of_monkeys_left_on_the_tree:",monkeysleft)
